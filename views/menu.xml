@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="cash_box.action_window_outflow_seat">
+            <field name="name">Outflow of the Cash Box</field>
+            <field name="res_model">cash_box.outflow_seat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="cash_box.action_window_inflow_seat">
+            <field name="name">Inflow of the Cash Box</field>
+            <field name="res_model">cash_box.inflow_seat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <!-- Top menu item -->  
+        <menuitem name="Cash box" id="cash_box.menu_root"/>
+        
+        <!-- menu categories -->  
+        <menuitem name="Cash box" id="cash_box.menu_1" parent="cash_box.menu_root"/>
+
+        <!-- actions --> 
+        <menuitem name="Outflow" id="cash_box.action_outflow_seat" parent="cash_box.menu_1"
+                  action="cash_box.action_window_outflow_seat"/>
+
+        <menuitem name="Inflow" id="cash_box.action_inflow_seat" parent="cash_box.menu_1"
+                  action="cash_box.action_window_inflow_seat"/>      
+
+    </data>
+</odoo>
