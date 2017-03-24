@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "cash_box",
+    'name': "Cash Box",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Cash  Box is a module odoo 10 for management move cash in a company""",
 
     'description': """
         Long description of module's purpose
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Team Dev BMKeros",
+    'website': "http://dev.bmkeros.org.ve",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
@@ -25,8 +24,8 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'views/inflow_seat_view.xml',
+        'views/outflow_seat_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
