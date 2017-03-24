@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="cash_box.tree_inflow_seat">
+            <field name="name">cash_box inflow_seat</field>
+            <field name="model">cash_box.inflow_seat</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="user" placeholder="User"/>
+                    <field name="amount" placeholder="Amount"/>
+                    <field name="description" placeholder="Description"/>
+                    <field name="date" placeholder="Date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="cash_box.form_inflow_seat">
+            <field name="name">cash_box inflow_seat</field>
+            <field name="model">cash_box.inflow_seat</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="user" placeholder="User"/>
+                        <field name="amount" placeholder="Amount"/>
+                        <field name="description" placeholder="Description"/>
+                        <field name="date" placeholder="Date"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
