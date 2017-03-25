@@ -14,7 +14,7 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="cash_box.form_inflow_seat">
+        <record model="ir.ui.view" id="inflow_seat_form">
             <field name="name">cash_box inflow_seat</field>
             <field name="model">cash_box.inflow_seat</field>
             <field name="arch" type="xml">
