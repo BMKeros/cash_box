@@ -3,13 +3,13 @@
     'name': "Cash Box",
 
     'summary': """
-        Cash  Box is a module odoo 10 for management move cash in a company""",
+        Cash  Box is a module odoo 10 for management cash movement in a company""",
 
     'description': """
         Long description of module's purpose
     """,
 
-    'author': "Team Dev BMKeros",
+    'author': "Dev Team BMKeros",
     'website': "http://dev.bmkeros.org.ve",
 
     # Categories can be used to filter modules in modules listing
@@ -32,4 +32,6 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'installable': True,
+    'application': True
 }
