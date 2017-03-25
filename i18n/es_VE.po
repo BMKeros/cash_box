@@ -36,7 +36,7 @@ msgstr "Caja Chica / Entradas"
 #. module: cash_box
 #: model:ir.actions.act_window,name:cash_box.action_window_inflow_seat
 msgid "Inflow of the Cash Box"
-msgstr "Asientos Entradas"
+msgstr "Caja Chica / Entradas"
 
 #. module: cash_box
 #: model:ir.actions.act_window,name:cash_box.action_window_outflow_seat
@@ -59,5 +59,26 @@ msgstr "Salidas"
 msgid "Inflow"
 msgstr "Entradas"
 
+#. module: hr
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_employee
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_employee
+msgid "Employee"
+msgstr "Empleado"
 
+#. module: hr
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_amount
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_amount
+msgid "Amount"
+msgstr "Monto"
 
+#. module: hr
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_description
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_description
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: hr
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_date
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_date
+msgid "Date"
+msgstr "Fecha"
