@@ -2,21 +2,20 @@
 
 from odoo import models, fields, api
 
+
 class outflow_seat(models.Model):
-	# nombre del modele - nombre de la clase
     _name = 'cash_box.outflow_seat'
 
-    user = fields.Char()
-    amount = fields.Integer()
-    description = fields.Char()
-    date = fields.Datetime()
-    # fecha_registro = fields.Date(auto_now_add=True, auto_now=False)
+    employee = fields.Char(srting='Employee',help='Enter you user',required=True)
+    amount = fields.Integer(string='Amount',help='Enter amount', required=True)
+    description = fields.Text(string='Description',help='Enter a description',required=True)
+    date = fields.Datetime(string='Date',help='Enter date',required=True)
+
 
 class inflow_seat(models.Model):
-    
     _name = 'cash_box.inflow_seat'
 
-    user= fields.Char()
-    amount= fields.Integer()
-    description= fields.Char()
-    date= fields.Datetime()
+    employee = fields.Char(srting='Employee', help='Enter you user', required=True)
+    amount = fields.Integer(string='Amount', help='Enter amount', required=True)
+    description = fields.Text(string='Description', help='Enter a description', required=True)
+    date = fields.Datetime(string='Date', help='Enter date', required=True)

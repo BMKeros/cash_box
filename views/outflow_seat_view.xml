@@ -6,10 +6,10 @@
             <field name="model">cash_box.outflow_seat</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="user" placeholder="User"/>
-                    <field name="amount" placeholder="Amount"/>
-                    <field name="description" placeholder="Description"/>
-                    <field name="date" placeholder="Date"/>
+                    <field name="employee"/>
+                    <field name="amount"/>
+                    <field name="description"/>
+                    <field name="date"/>
                 </tree>
             </field>
         </record>
@@ -20,10 +20,10 @@
             <field name="arch" type="xml">
                 <form>
                     <group>
-                        <field name="user" placeholder="User"/>
-                        <field name="amount" placeholder="Amount"/>
-                        <field name="description" placeholder="Description"/>
-                        <field name="date" placeholder="Date"/>
+                        <field name="employee"/>
+                        <field name="amount"/>
+                        <field name="description"/>
+                        <field name="date"/>
                     </group>
                 </form>
             </field>
