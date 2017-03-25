@@ -1,0 +1,63 @@
+# #-#-#-#-#  es_VE.po (Odoo 10.0)  #-#-#-#-#
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr
+#
+# Translators:
+# Israel Lugo <hostelixisrael@gmail.com>, 2017
+# #-#-#-#-#  es_VE.po (Odoo 10.0)  #-#-#-#-#
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr
+#
+# Translators:
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 08:43+0000\n"
+"PO-Revision-Date: 2016-05-15 18:50+0000\n"
+"Last-Translator: Israel Lugo\n"
+"Language-Team: Spanish (Venezuela) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_VE/)\n"
+"Language: es_VE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"#-#-#-#-#  es_VE.po (Odoo 10.0)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.inflow_seat_tree
+msgid "cash_box inflow_seat"
+msgstr "Caja Chica / Entradas"
+
+#. module: cash_box
+#: model:ir.actions.act_window,name:cash_box.action_window_inflow_seat
+msgid "Inflow of the Cash Box"
+msgstr "Asientos Entradas"
+
+#. module: cash_box
+#: model:ir.actions.act_window,name:cash_box.action_window_outflow_seat
+msgid "Outflow of the Cash Box"
+msgstr "Caja Chica / Salidas"
+
+#. module: cash_box
+#: model:ir.ui.menu,name:cash_box.menu_root
+#: model:ir.ui.menu,name:cash_box.categories_menu_1
+msgid "Cash Box"
+msgstr "Caja Chica"
+
+#. module: cash_box
+#: model:ir.ui.menu,name:cash_box.action_category_outflow_seat
+msgid "Outflow"
+msgstr "Salidas"
+
+#. module: cash_box
+#: model:ir.ui.menu,name:cash_box.action_category_inflow_seat
+msgid "Inflow"
+msgstr "Entradas"
+
+
+
