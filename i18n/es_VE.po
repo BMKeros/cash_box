@@ -59,25 +59,25 @@ msgstr "Salidas"
 msgid "Inflow"
 msgstr "Entradas"
 
-#. module: hr
+#. module: cash_box
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_employee
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_employee
 msgid "Employee"
 msgstr "Empleado"
 
-#. module: hr
+#. module: cash_box
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_amount
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_amount
 msgid "Amount"
 msgstr "Monto"
 
-#. module: hr
+#. module: cash_box
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_description
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_description
 msgid "Description"
 msgstr "Descripcion"
 
-#. module: hr
+#. module: cash_box
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_date
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_date
 msgid "Date"
