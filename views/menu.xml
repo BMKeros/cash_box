@@ -2,30 +2,30 @@
     <data>
 
         <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="cash_box.action_window_outflow_seat">
+        <record model="ir.actions.act_window" id="action_window_outflow_seat">
             <field name="name">Outflow of the Cash Box</field>
             <field name="res_model">cash_box.outflow_seat</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <record model="ir.actions.act_window" id="cash_box.action_window_inflow_seat">
+        <record model="ir.actions.act_window" id="action_window_inflow_seat">
             <field name="name">Inflow of the Cash Box</field>
             <field name="res_model">cash_box.inflow_seat</field>
             <field name="view_mode">tree,form</field>
         </record>
-        
-        <!-- Top menu item -->  
-        <menuitem name="Cash box" id="cash_box.menu_root"/>
-        
-        <!-- menu categories -->  
-        <menuitem name="Cash box" id="cash_box.menu_1" parent="cash_box.menu_root"/>
 
-        <!-- actions --> 
-        <menuitem name="Outflow" id="cash_box.action_outflow_seat" parent="cash_box.menu_1"
-                  action="cash_box.action_window_outflow_seat"/>
+        <!-- Top menu item -->
+        <menuitem name="Cash Box" id="menu_root"/>
 
-        <menuitem name="Inflow" id="cash_box.action_inflow_seat" parent="cash_box.menu_1"
-                  action="cash_box.action_window_inflow_seat"/>      
+        <!-- menu categories -->
+        <menuitem name="Cash Box" id="categories_menu_1" parent="menu_root"/>
+
+        <!-- actions -->
+        <menuitem name="Outflow" id="action_category_outflow_seat" parent="categories_menu_1"
+                  action="action_window_outflow_seat"/>
+
+        <menuitem name="Inflow" id="action_category_inflow_seat" parent="categories_menu_1"
+                  action="action_window_inflow_seat"/>
 
     </data>
 </odoo>

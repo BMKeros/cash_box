@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <!-- explicit list view definition -->
-        <record model="ir.ui.view" id="cash_box.tree_inflow_seat">
+        <record model="ir.ui.view" id="inflow_seat_tree">
             <field name="name">cash_box inflow_seat</field>
             <field name="model">cash_box.inflow_seat</field>
             <field name="arch" type="xml">
