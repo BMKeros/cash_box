@@ -20,10 +20,10 @@
             <field name="arch" type="xml">
                 <form>
                     <group>
-                        <field name="employee"/>
-                        <field name="amount"/>
-                        <field name="description"/>
-                        <field name="date"/>
+                        <field name="employee" style="width:50% !important;"/>
+                        <field name="amount" style="width:50% !important;"/>
+                        <field name="description" style="width:50% !important;"/>
+                        <field name="date" style="width:50% !important;"/>
                     </group>
                 </form>
             </field>
