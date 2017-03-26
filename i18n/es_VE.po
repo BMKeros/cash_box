@@ -78,7 +78,7 @@ msgid "Description"
 msgstr "Descripcion"
 
 #. module: cash_box
-#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_date
-#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_date
-msgid "Date"
-msgstr "Fecha"
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_create_date
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_create_date
+msgid "Created On"
+msgstr "Fecha registro"
