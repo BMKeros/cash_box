@@ -5,6 +5,7 @@ from odoo import models, fields, api
 
 class outflow_seat(models.Model):
     _name = 'cash_box.outflow_seat'
+    _rec_name = "employee"
 
     employee = fields.Many2one('res.users',default=lambda self: self.env.user, string='Employee', required=True, readonly=True, help='');
     amount = fields.Float(string='Amount',help='Enter amount', required=True)
@@ -13,6 +14,7 @@ class outflow_seat(models.Model):
 
 class inflow_seat(models.Model):
     _name = 'cash_box.inflow_seat'
+    _rec_name = "employee"
 
     employee = fields.Many2one('res.users',default=lambda self: self.env.user, string='Employee', required=True, readonly=True, help='');
     amount = fields.Float(string='Amount', help='Enter amount', required=True)
