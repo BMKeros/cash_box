@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_voucher_outflow">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+
+                    <t t-call="report.external_layout">
+
+                        <div class="page">
+
+
+                            <div class="page-header">
+                                <h3>Comprobante de Salida
+                                    <t t-esc="o.id"/>
+                                </h3>
+                            </div>
+
+                            <table class="table table-condensed">
+                                <thead>
+                                    <th colspan="2" class="center">Datos del comprobante</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Employee:</td>
+                                        <td>
+                                            <t t-esc="o.employee"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Amount:</td>
+                                        <td>
+                                            <t t-esc="o.amount"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description:</td>
+                                        <td>
+                                            <t t-esc="o.description"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td>
+                                            <t t-esc="o.create_date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--<div class="row">
+                                <div class="col-xs-6">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">Amount:
+                                    <t t-esc="o.amount"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">Description:
+                                    <t t-esc="o.description"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">Date:
+                                    <t t-esc="o.create_date"/>
+                                </div>
+                            </div>-->
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <report
+                id="button_report_voucher_outflow"
+                model="cash_box.outflow_seat"
+                string="Print Voucher"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_voucher_outflow"
+                file="cash_box.report_voucher_outflow"
+        />
+    </data>
+</odoo>
