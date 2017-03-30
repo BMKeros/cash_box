@@ -27,6 +27,7 @@
         'views/menu.xml',
         'views/inflow_seat_view.xml',
         'views/outflow_seat_view.xml',
+        'reports/report_voucher_outflow.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
