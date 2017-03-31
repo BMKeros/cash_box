@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_voucher_inflow">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+
+                    <t t-call="report.external_layout">
+
+                        <div class="page">
+
+
+                            <div class="page-header">
+                                <h3>Comprobante de Entrada
+                                    <t t-esc="o.id"/>
+                                </h3>
+                            </div>
+
+                            <table class="table table-condensed">
+                                <thead>
+                                    <th colspan="2" class="center">Datos del comprobante</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Employee:</td>
+                                        <td>
+                                            <t t-esc="o.employee"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Amount:</td>
+                                        <td>
+                                            <t t-esc="o.amount"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description:</td>
+                                        <td>
+                                            <t t-esc="o.description"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td>
+                                            <t t-esc="o.create_date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <report
+                id="button_report_voucher_inflow"
+                model="cash_box.inflow_seat"
+                string="Print Voucher"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_voucher_inflow"
+                file="cash_box.report_voucher_inflow"
+        />
+    </data>
+</odoo>
