@@ -24,7 +24,7 @@
                                     <tr>
                                         <td>Employee:</td>
                                         <td>
-                                            <t t-esc="o.employee"/>
+                                            <t t-esc="o.employee.name"/>
                                         </td>
                                     </tr>
                                     <tr>
