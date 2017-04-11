@@ -30,7 +30,7 @@
                                     <tr>
                                         <td>Amount:</td>
                                         <td>
-                                            <t t-esc="o.amount"/>
+                                            <t t-esc="o.amount"/> <span t-field="o.currency_id.symbol" />
                                         </td>
                                     </tr>
                                     <tr>

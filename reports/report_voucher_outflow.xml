@@ -9,7 +9,6 @@
 
                         <div class="page">
 
-
                             <div class="page-header">
                                 <h3>Comprobante de Salida
                                     <t t-esc="o.id"/>
@@ -30,7 +29,7 @@
                                     <tr>
                                         <td>Amount:</td>
                                         <td>
-                                            <t t-esc="o.amount"/>
+                                            <t t-esc="o.amount"/> <span t-field="o.currency_id.symbol" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -47,27 +46,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <!--<div class="row">
-                                <div class="col-xs-6">
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6">Amount:
-                                    <t t-esc="o.amount"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6">Description:
-                                    <t t-esc="o.description"/>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-6">Date:
-                                    <t t-esc="o.create_date"/>
-                                </div>
-                            </div>-->
                         </div>
                     </t>
                 </t>
