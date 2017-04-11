@@ -8,6 +8,7 @@
                 <tree>
                     <field name="employee"/>
                     <field name="amount"/>
+                    <field name="currency_id" invisible="1"/>
                     <field name="description"/>
                     <field name="create_date"/>
                 </tree>
@@ -22,6 +23,7 @@
                     <group>
                         <field name="employee" style="width:50% !important;"/>
                         <field name="amount" style="width:50% !important;"/>
+                        <field name="currency_id" style="width:50% !important;" invisible="1"/>
                         <field name="description" style="width:50% !important;"/>
                     </group>
                 </form>
