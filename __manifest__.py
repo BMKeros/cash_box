@@ -23,7 +23,8 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/cash_box_security.xml',
+        'security/ir.model.access.csv',
         'views/menu.xml',
         'views/inflow_seat_view.xml',
         'views/outflow_seat_view.xml',
