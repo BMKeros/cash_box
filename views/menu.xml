@@ -30,7 +30,7 @@
                 name="Report"
                 id="categories_menu_2"
                 parent="menu_root"/>
-        
+
         <!-- actions -->
         <menuitem name="Outflow"
                   id="action_category_outflow_seat"

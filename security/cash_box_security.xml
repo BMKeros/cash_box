@@ -8,11 +8,12 @@
     <record id="group_cash_box_user" model="res.groups">
         <field name="name">Employee User</field>
         <field name="comment">The user has been able to create entry and exit seats in cash box.</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
         <field name="category_id" ref="module_management_category"/>
     </record>
 
     <record id="group_cash_box_manager" model="res.groups">
-        <field name="name">Empleado Manager</field>
+        <field name="name">Employee Manager</field>
         <field name="comment">The manager can create, delete and approve entry records in cash box.
         </field>
         <field name="users" eval="[(4, ref('base.user_root'))]"/>
