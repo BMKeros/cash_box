@@ -15,17 +15,33 @@
         </record>
 
         <!-- Top menu item -->
-        <menuitem name="Cash Box" id="menu_root"/>
+        <menuitem
+                name="Cash Box"
+                id="menu_root"
+                groups="group_cash_box_user,group_cash_box_manager"/>
+
 
         <!-- menu categories -->
-        <menuitem name="Cash Box" id="categories_menu_1" parent="menu_root"/>
-
+        <menuitem
+                name="Cash Box" id="categories_menu_1"
+                parent="menu_root"/>
+        <!-- menu categories -->
+        <menuitem
+                name="Report"
+                id="categories_menu_2"
+                parent="menu_root"/>
+        
         <!-- actions -->
-        <menuitem name="Outflow" id="action_category_outflow_seat" parent="categories_menu_1"
+        <menuitem name="Outflow"
+                  id="action_category_outflow_seat"
+                  parent="categories_menu_1"
                   action="action_window_outflow_seat"/>
 
-        <menuitem name="Inflow" id="action_category_inflow_seat" parent="categories_menu_1"
-                  action="action_window_inflow_seat"/>
+        <menuitem
+                name="Inflow" id="action_category_inflow_seat"
+                parent="categories_menu_1"
+                action="action_window_inflow_seat"
+                groups="group_cash_box_user,group_cash_box_manager"/>
 
     </data>
 </odoo>
