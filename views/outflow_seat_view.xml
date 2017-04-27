@@ -30,5 +30,15 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="outflow_seat_calendar">
+            <field name="name">Movements of Outflow</field>
+            <field name="model">cash_box.outflow_seat</field>
+            <field name="arch" type="xml">           
+                <calendar string="Movements Calendar" date_start="create_date" color="employee">        
+                    <field name="employee"/>
+                    <field name="description"/>
+                </calendar>
+            </field>
+        </record>
     </data>
 </odoo>
