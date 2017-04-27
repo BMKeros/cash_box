@@ -5,13 +5,13 @@
         <record model="ir.actions.act_window" id="action_window_outflow_seat">
             <field name="name">Outflow of the Cash Box</field>
             <field name="res_model">cash_box.outflow_seat</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
         </record>
 
         <record model="ir.actions.act_window" id="action_window_inflow_seat">
             <field name="name">Inflow of the Cash Box</field>
             <field name="res_model">cash_box.inflow_seat</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
         </record>
 
         <!-- Top menu item -->
