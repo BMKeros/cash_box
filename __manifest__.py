@@ -31,6 +31,11 @@
         'reports/report_voucher_outflow.xml',
         'reports/report_voucher_inflow.xml'
     ],
+    'qweb': [
+        'static/src/xml/custom_button_print_movements_outflow_seat.xml',
+        'static/src/xml/custom_button_print_movements_inflow_seat.xml'
+
+    ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
