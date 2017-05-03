@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <template id="external_layout_header_customized" inherit_id="report.external_layout_header">
+            <xpath expr="//div[@class='header']" position="replace">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo"
+                                 style="max-height: 45px;"/>
+                        </div>
+                        <div class="col-xs-9 text-right" style="margin-top:20px;" t-field="company.rml_header1"/>
+                    </div>
+                    <div class="row zero_min_height">
+                        <div class="col-xs-12">
+                            <div style="border-bottom: 1px solid blue;"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" style="border-bottom: 1px solid blue;">
+                            <span t-if="company.partner_id.vat">TIN:
+                                <span t-field="company.partner_id.vat"/>
+                            </span>
+                            <div t-field="company.partner_id"
+                                 t-field-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;:[&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: true}"
+                                 class="pull-left"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
         <template id="report_voucher_inflow">
             <t t-call="report.html_container">
                 <t t-foreach="docs" t-as="o">
 
                     <t t-call="report.external_layout">
 
-                        <div class="page">
-
-
+                        <div class="page" id="page">
+                            <br></br>
+                            <br></br>
                             <div class="page-header">
-                                <h3>Comprobante de Entrada
-                                    <t t-esc="o.id"/>
-                                </h3>
+                                <br></br>
+                                <br></br>
+                                <h3 id="type_voucher">Comprobante de Entrada</h3>
                             </div>
-
+                            <br></br>
+                            <br></br>
                             <table class="table table-condensed">
                                 <thead>
-                                    <th colspan="2" class="center">Datos del comprobante</th>
+                                    <th colspan="6" id="data_voucher">Datos del comprobante</th>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="success">
                                         <td>Employee:</td>
                                         <td>
                                             <t t-esc="o.employee.name"/>
@@ -30,10 +60,11 @@
                                     <tr>
                                         <td>Amount:</td>
                                         <td>
-                                            <t t-esc="o.amount"/> <span t-field="o.currency_id.symbol" />
+                                            <t t-esc="o.amount"/>
+                                            <span t-field="o.currency_id.symbol"/>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="active">
                                         <td>Description:</td>
                                         <td>
                                             <t t-esc="o.description"/>
@@ -52,6 +83,84 @@
                 </t>
             </t>
         </template>
+
+        <template id="external_layout_footer_customized" inherit_id="report.external_layout_footer">
+            <xpath expr="//div[@class='footer']" position="replace">
+                <div class="footer">
+                    <div class="text-center" style="border-top: 1px solid black;">
+                        <ul t-if="not company.custom_footer" class="list-inline">
+                            <li t-if="company.phone">Tel:
+                                <span t-field="company.phone"/>
+                            </li>
+
+                            <li t-if="company.fax and company.phone">&amp;bull;</li>
+                            <li t-if="company.fax">Fax:
+                                <span t-field="company.fax"/>
+                            </li>
+
+                            <li t-if="company.email">&amp;bull;</li>
+                            <li t-if="company.email">
+                                <span t-field="company.email"/>
+                            </li>
+
+                            <li t-if="company.website">&amp;bull;</li>
+                            <li t-if="company.website">
+                                <span t-field="company.website"/>
+                            </li>
+                        </ul>
+
+                        <t t-if="company.custom_footer">
+                            <span t-raw="company.rml_footer"/>
+                        </t>
+
+                        <ul class="list-inline">
+                            <li>Page:</li>
+                            <li>
+                                <span class="page"/>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <span class="topage"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="internal_layout">
+            <!-- Multicompany -->
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id"></t>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"></t>
+            </t>
+
+            <div class="header">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-2 text-center">
+                        <span t-esc="company.name"/>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-3 text-right">
+                        <ul class="list-inline">
+                            <li>
+                                <span class="page"/>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <span class="topage"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <t t-raw="0"/>
+        </template>
+
 
         <report
                 id="button_report_voucher_inflow"
