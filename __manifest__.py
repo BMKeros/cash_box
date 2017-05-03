@@ -26,6 +26,7 @@
         'security/cash_box_security.xml',
         'security/ir.model.access.csv',
         'views/menu.xml',
+        'views/templates.xml',
         'views/inflow_seat_view.xml',
         'views/outflow_seat_view.xml',
         'reports/report_voucher_outflow.xml',
