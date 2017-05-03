@@ -82,3 +82,180 @@ msgstr "Descripcion"
 #: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_create_date
 msgid "Created On"
 msgstr "Fecha registro"
+
+#. module: cash_box
+#: model:ir.module.category,name:cash_box.module_management_category
+msgid "Access Cash Box Module"
+msgstr "Acceso al Modulo Cash Box"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Amount:"
+msgstr "Monto:"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+msgid "Comprobante de Entrada"
+msgstr "Comprobante de Entrada"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Comprobante de Salida"
+msgstr "Comprobante de Salida"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_create_uid
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_currency_id
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Date:"
+msgstr "Fecha:"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Datos del comprobante"
+msgstr "Datos del comprobante"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Description:"
+msgstr "Descripción:"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_display_name
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: cash_box
+#: model:res.groups,name:cash_box.group_cash_box_manager
+msgid "Employee Manager"
+msgstr "Empleado Administrador"
+
+#. module: cash_box
+#: model:res.groups,name:cash_box.group_cash_box_user
+msgid "Employee User"
+msgstr "Usuario Empleado"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_inflow
+#: model:ir.ui.view,arch_db:cash_box.report_voucher_outflow
+msgid "Employee:"
+msgstr "Empleado:"
+
+#. module: cash_box
+#: model:ir.model.fields,help:cash_box.field_cash_box_inflow_seat_description
+#: model:ir.model.fields,help:cash_box.field_cash_box_outflow_seat_description
+msgid "Enter a description"
+msgstr "Ingrese una Descripción"
+
+#. module: cash_box
+#: model:ir.model.fields,help:cash_box.field_cash_box_inflow_seat_amount
+#: model:ir.model.fields,help:cash_box.field_cash_box_outflow_seat_amount
+msgid "Enter amount"
+msgstr "Ingrese monto"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_id
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_id
+msgid "ID"
+msgstr "ID"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat___last_update
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat___last_update
+msgid "Last Modified on"
+msgstr "Modificada por última vez"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_write_uid
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: cash_box
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_inflow_seat_write_date
+#: model:ir.model.fields,field_description:cash_box.field_cash_box_outflow_seat_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizacion en"
+
+#. module: cash_box
+#: model:ir.ui.view,arch_db:cash_box.inflow_seat_calendar
+#: model:ir.ui.view,arch_db:cash_box.outflow_seat_calendar
+msgid "Movements Calendar"
+msgstr "Movimientos Calendario"
+
+#. module: cash_box
+#. openerp-web
+#: code:local_addons/cash_box/static/src/xml/custom_button_print_movements_inflow_seat.xml:8
+#, python-format
+msgid "Print Movements of Inflow"
+msgstr "Imprimir Movimientos de Entrada"
+
+#. module: cash_box
+#. openerp-web
+#: code:local_addons/cash_box/static/src/xml/custom_button_print_movements_outflow_seat.xml:8
+#, python-format
+msgid "Print Movements of Outflow"
+msgstr "Imprimir Movimientos de Salida"
+
+#. module: cash_box
+#: model:ir.actions.report.xml,name:cash_box.button_report_voucher_inflow
+#: model:ir.actions.report.xml,name:cash_box.button_report_voucher_outflow
+msgid "Print Voucher"
+msgstr "Imprimir Comprobante"
+
+#. module: cash_box
+#: model:ir.ui.menu,name:cash_box.categories_menu_2
+msgid "Report"
+msgstr "Reporte"
+
+#. module: cash_box
+#: model:res.groups,comment:cash_box.group_cash_box_manager
+msgid "The manager can create, delete and approve entry records in cash box.\n"
+"        "
+msgstr "El administrador puede crear, eliminar y aprobar los registros de entrada en la caja chica.\n"
+"        "
+
+#. module: cash_box
+#: model:res.groups,comment:cash_box.group_cash_box_user
+msgid "The user has been able to create entry and exit seats in cash box."
+msgstr "El usuario ha sido capaz de crear entradas y salidas en la caja chica."
+
+#. module: cash_box
+#: model:ir.module.category,description:cash_box.module_management_category
+msgid "User access level for this module"
+msgstr "Nivel de acceso de usuario para este módulo"
+
+#. module: cash_box
+#: model:ir.model,name:cash_box.model_cash_box_inflow_seat
+msgid "cash_box.inflow_seat"
+msgstr "cash_box.inflow_seat"
+
+#. module: cash_box
+#: model:ir.model,name:cash_box.model_cash_box_movements
+msgid "cash_box.movements"
+msgstr "cash_box.movements"
+
+#. module: cash_box
+#: model:ir.model,name:cash_box.model_cash_box_outflow_seat
+msgid "cash_box.outflow_seat"
+msgstr "cash_box.outflow_seat"
+
+#. module: cash_box
+#: model:ir.model,name:cash_box.model_movements
+msgid "movements"
+msgstr "movimientos"
