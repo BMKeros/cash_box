@@ -1,8 +1,15 @@
-.rojo{
-    background: #dddd00 !important;
-    width: 10%;
-}
-page-header{
-    margin-right: 26px !important;
+#type_voucher {
+    top:5px !important;
+    color: #34495e !important;
+    text-align: center !important;
+    font-size: 35px;
+    @font-family-serif: Georgia, "Times New Roman", Times, serif;
 
+}
+
+#data_voucher {
+    text-align: left !important;
+    color: #000000;
+    font-size: 18px !important;
+    @font-family-serif: Georgia, "Times New Roman", Times, serif;
 }
