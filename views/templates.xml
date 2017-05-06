@@ -1,7 +1,0 @@
-<odoo>
-    <template id="assets_backend" name="report assets" inherit_id="report.assets_pdf">
-        <xpath expr="." position="inside">
-            <link rel="stylesheet" type="text/css" href="/cash_box/static/src/css/styles.css"/>
-        </xpath>
-    </template>
-</odoo>
