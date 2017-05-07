@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <report
+                id="action_report_voucher_inflow"
+                model="cash_box.inflow_seat"
+                string="Print Voucher"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_voucher_inflow"
+                file="cash_box.report_voucher_inflow"
+        />
+
+        <report
+                id="action_report_voucher_outflow"
+                model="cash_box.outflow_seat"
+                string="Print Voucher"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_voucher_outflow"
+                file="cash_box.report_voucher_outflow"
+        />
+        
+        <report
+                id="action_report_details_movements_inflow"
+                model="cash_box.report_details_movements_inflow"
+                string="Report Details Movements"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_details_movements_inflow"
+                file="cash_box.report_details_movements_inflow"
+        />
+
+        <report
+                id="action_report_details_movements_outflow"
+                model="cash_box.report_details_movements_outflow"
+                string="Report Details Movements"
+                report_type="qweb-pdf"
+                attachment_use="False"
+                name="cash_box.report_details_movements_outflow"
+                file="cash_box.report_details_movements_outflow"
+        />
+        
+    </data>
+</odoo>
