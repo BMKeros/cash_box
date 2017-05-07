@@ -32,7 +32,7 @@
         'views/cash_box_report.xml',
         'reports/report_voucher_outflow.xml',
         'reports/report_voucher_inflow.xml',
-        'reports/details_movements_inflow.xml'
+        'reports/details_movements_inflow.xml',
         'reports/details_movements_outflow.xml'
     ],
     'qweb': [
