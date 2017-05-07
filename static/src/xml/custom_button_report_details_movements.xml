@@ -7,7 +7,7 @@
             <t t-if="widget.model=='cash_box.outflow_seat'">
                 <button
                         class="btn btn-sm btn-primary btn-large"
-                        id="bmk_btn_print_report"
+                        id="bmk_btn_print_report_details_outflow"
                         name='print_report'
                         type="button">Details Movements of Outflow <i class="fa fa-file-pdf-o"></i>
                 </button>
@@ -16,7 +16,7 @@
             <t t-if="widget.model=='cash_box.inflow_seat'">
                 <button
                         class="btn btn-sm btn-primary btn-large"
-                        id="bmk_btn_print_report"
+                        id="bmk_btn_print_report_details_inflow"
                         name='print_movements'
                         type="button">Details Movements of Inflow <i class="fa fa-file-pdf-o"></i>
                 </button>
