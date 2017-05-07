@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="ListView.buttons">
+        <t t-jquery="button.o_list_button_add" t-operation="after">
+            <t t-if="widget.model=='cash_box.outflow_seat'">
+                <button
+                        class="btn btn-sm btn-primary btn-large"
+                        id="bmk_btn_print_report"
+                        name='print_report'
+                        type="button">Details Movements of Outflow <i class="fa fa-file-pdf-o"></i>
+                </button>
+            </t>
+
+            <t t-if="widget.model=='cash_box.inflow_seat'">
+                <button
+                        class="btn btn-sm btn-primary btn-large"
+                        id="bmk_btn_print_report"
+                        name='print_movements'
+                        type="button">Details Movements of Inflow <i class="fa fa-file-pdf-o"></i>
+                </button>
+            </t>
+        </t>
+    </t>
+
+</templates>
