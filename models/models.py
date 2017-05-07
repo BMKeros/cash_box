@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
-
+import time
 
 class outflow_seat(models.Model):
     _name = 'cash_box.outflow_seat'
@@ -19,6 +19,16 @@ class outflow_seat(models.Model):
         # currency_id = self.env['res.users'].browse(self._uid).company_id.currency_id
         currency_id = self.env['res.company']._company_default_get('cash_box').currency_id
         return currency_id or self._get_euro()
+
+    @api.model
+    def print_report_details_movements(self):
+        context = self.env.context
+        return {
+            'type': 'ir.actions.report.xml',
+            'report_name': 'cash_box.report_details_movements_outflow',
+            'context': context,
+            'name': "details_movements_outflow_" + time.strftime('%Y_%m_%d')
+        }
 
     currency_id = fields.Many2one('res.currency', string='Currency',
                                   default=lambda self: self._get_company_currency())
@@ -46,6 +56,16 @@ class inflow_seat(models.Model):
         # currency_id = self.env['res.users'].browse(self._uid).company_id.currency_id
         currency_id = self.env['res.company']._company_default_get('cash_box').currency_id
         return currency_id or self._get_euro()
+
+    @api.model
+    def print_report_details_movements(self):
+        context = self.env.context
+        return {
+            'type': 'ir.actions.report.xml',
+            'report_name': 'cash_box.report_details_movements_inflow',
+            'context': context,
+            'name': "details_movements_inflow_" + time.strftime('%Y_%m_%d')
+        }
 
     currency_id = fields.Many2one('res.currency', string='Currency',
                                   default=lambda self: self._get_company_currency())
