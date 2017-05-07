@@ -15,7 +15,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Finances',
+    'category': 'Accounting & Finance',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -25,15 +25,18 @@
     'data': [
         'security/cash_box_security.xml',
         'security/ir.model.access.csv',
+        'views/cash_box.xml',
         'views/menu.xml',
         'views/inflow_seat_view.xml',
         'views/outflow_seat_view.xml',
+        'views/cash_box_report.xml',
         'reports/report_voucher_outflow.xml',
-        'reports/report_voucher_inflow.xml'
+        'reports/report_voucher_inflow.xml',
+        'reports/details_movements_inflow.xml'
+        'reports/details_movements_outflow.xml'
     ],
     'qweb': [
-        'static/src/xml/custom_button_print_movements_outflow_seat.xml',
-        'static/src/xml/custom_button_print_movements_inflow_seat.xml'
+        'static/src/xml/custom_button_report_details_movements.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
