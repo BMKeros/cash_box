@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_details_movements_outflow">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+
+                    <div class="page">
+                        Details Movements Outflow
+
+                        <t t-foreach="data" t-as="x">
+                            <p><t t-esc="x"></t></p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
