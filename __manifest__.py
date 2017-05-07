@@ -6,7 +6,7 @@
         Cash  Box is a module odoo 10 for management cash movement in a company""",
 
     'description': """
-        Long description of module's purpose
+        Long description of module's purpose..
     """,
 
     'author': "Dev Team BMKeros",
