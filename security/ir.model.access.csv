@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 inflow_access_cash_box_admin,cash_box admin access,model_cash_box_inflow_seat,group_cash_box_manager,1,1,1,1
-inflow_access_cash_box_user,cash_box user access,model_cash_box_inflow_seat,group_cash_box_user,1,0,1,0
+inflow_access_cash_box_user,cash_box user access,model_cash_box_inflow_seat,group_cash_box_user,1,0,0,0
 outflow_access_cash_box_admin,cash_box admin access,model_cash_box_outflow_seat,group_cash_box_manager,1,1,1,1
 outflow_access_cash_box_user,cash_box user access,model_cash_box_outflow_seat,group_cash_box_user,1,0,1,0
