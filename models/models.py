@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
 import time
+import datetime
+
 
 class outflow_seat(models.Model):
     _name = 'cash_box.outflow_seat'
@@ -21,6 +23,10 @@ class outflow_seat(models.Model):
         return currency_id or self._get_euro()
 
     @api.model
+    def _get_datetime_now(self):
+        return datetime.datetime.now()
+
+    @api.model
     def print_report_details_movements(self):
         context = self.env.context
         return {
@@ -37,6 +43,8 @@ class outflow_seat(models.Model):
                                readonly=True, help='')
     amount = fields.Monetary(string='Amount', help='Enter amount', required=True, currency_field='currency_id')
     description = fields.Text(string='Description', help='Enter a description', required=True)
+    created_date = fields.Datetime(string='Created Date', required=True,
+                                   default=lambda self: self._get_datetime_now())
 
 
 class inflow_seat(models.Model):
@@ -58,6 +66,10 @@ class inflow_seat(models.Model):
         return currency_id or self._get_euro()
 
     @api.model
+    def _get_datetime_now(self):
+        return datetime.datetime.now()
+
+    @api.model
     def print_report_details_movements(self):
         context = self.env.context
         return {
@@ -74,3 +86,5 @@ class inflow_seat(models.Model):
                                readonly=True, help='')
     amount = fields.Monetary(string='Amount', help='Enter amount', required=True, currency_field='currency_id')
     description = fields.Text(string='Description', help='Enter a description', required=True)
+    created_date = fields.Datetime(string='Created Date', required=True,
+                                   default=lambda self: self._get_datetime_now())

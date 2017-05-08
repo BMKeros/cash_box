@@ -10,7 +10,7 @@
                     <field name="amount"/>
                     <field name="currency_id" invisible="1"/>
                     <field name="description"/>
-                    <field name="create_date"/>
+                    <field name="created_date"/>
                 </tree>
             </field>
         </record>
@@ -34,7 +34,7 @@
             <field name="name">Movements of Inflow</field>
             <field name="model">cash_box.inflow_seat</field>
             <field name="arch" type="xml">           
-                <calendar string="Movements Calendar" date_start="create_date" color="employee">        
+                <calendar string="Movements Calendar" date_start="created_date" color="employee">
                     <field name="employee"/>
                     <field name="description"/>
                 </calendar>
