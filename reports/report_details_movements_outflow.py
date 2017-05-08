@@ -36,8 +36,7 @@ class ReportDetailsMovementsOutflow(models.AbstractModel):
 
         for r in models:
 
-            date = r.create_date.split('-')
-            name_month = self._get_name_month(r.create_date)
+            name_month = self._get_name_month(r.created_date)
 
             if tmp.get(name_month, None) is None:
                 tmp[name_month] = {'name':name_month, 'movements_months':[], 'total_amount': 0}
