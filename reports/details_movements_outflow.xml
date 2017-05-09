@@ -5,19 +5,20 @@
             <t t-call="report.html_container">
                 <t t-call="report.external_layout">
 
-                    <div class="page">
+                    <div class="page" style="margin-top: 100px;">
 
                         <div class="page-header">
                             <h3>Details Movements Outflow</h3>
                         </div>
-
 
                         <t t-foreach="data" t-as="x">
 
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <p>Month: <t t-esc="x['name']"></t></p>
+                                        <p>Month:
+                                            <t t-esc="x['name']"></t>
+                                        </p>
                                     </tr>
 
                                     <tr>
@@ -27,17 +28,14 @@
                                         <th>Date</th>
                                     </tr>
                                 </thead>
-                                
-                                <tbody>                         
+
+                                <tbody>
                                     <t t-foreach="x['movements_months']" t-as="o">
                                         <tr>
                                             <td>
                                                 <t t-esc="o.employee.name"/>
                                             </td>
 
-                                            <td>
-                                                <t t-esc="o.amount"/>
-                                            </td>
 
                                             <td>
                                                 <t t-esc="o.description"/>
@@ -46,23 +44,25 @@
                                             <td>
                                                 <t t-esc="o.created_date"/>
                                             </td>
+
+                                            <td>
+                                                <t t-esc="o.amount"/>
+                                            </td>
                                         </tr>
-                                        
                                     </t>
 
-                                </tbody> 
+                                </tbody>
 
-<!--                                <tfoot>
+                                <tfoot>
                                     <tr>
-                                        <td>
+                                        <td colspan="3" class="pull-right">
+                                            Total:
                                         </td>
-
                                         <td>
-
+                                            <t t-esc="x['total_amount']"></t>
                                         </td>
                                     </tr>
-
-                                </tfoot> -->
+                                </tfoot>
 
                             </table>
                         </t>
