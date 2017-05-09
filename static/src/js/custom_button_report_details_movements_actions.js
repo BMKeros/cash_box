@@ -22,7 +22,7 @@ openerp.cash_box = function (instance, local) {
                 var Users = new openerp.web.Model('res.users');
 
                 Users.call('has_group', ['cash_box.group_cash_box_manager']).done(function (_has_group) {
-                    if (!_has_group) {
+                    if (_has_group) {
                         self.$buttons.find('#bmk_btn_print_report_details_outflow').removeClass('o_hidden');
                         self.$buttons.find('#bmk_btn_print_report_details_inflow').removeClass('o_hidden');
                     }
