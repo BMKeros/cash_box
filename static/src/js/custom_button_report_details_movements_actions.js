@@ -4,7 +4,7 @@ openerp.cash_box = function (instance, local) {
     var self = this;
 
     instance.web.ListView.include({
-        render_buttons: function () {
+        render_buttons: function (_node) {
             var self = this;
             var add_button = false;
             if (!this.$buttons) { // Ensures that this is only done once
@@ -17,6 +17,16 @@ openerp.cash_box = function (instance, local) {
 
                 this.$buttons.find('#bmk_btn_print_report_details_outflow')
                     .click(this.proxy('action_print_details_outflow'));
+
+
+                var Users = new openerp.web.Model('res.users');
+
+                Users.call('has_group', ['cash_box.group_cash_box_manager']).done(function (_has_group) {
+                    if (!_has_group) {
+                        self.$buttons.find('#bmk_btn_print_report_details_outflow').removeClass('o_hidden');
+                        self.$buttons.find('#bmk_btn_print_report_details_inflow').removeClass('o_hidden');
+                    }
+                });
             }
         },
         action_print_details_inflow: function () {

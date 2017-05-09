@@ -6,7 +6,7 @@
         <t t-jquery="button.o_list_button_add" t-operation="after">
             <t t-if="widget.model=='cash_box.outflow_seat'">
                 <button
-                        class="btn btn-sm btn-success btn-large"
+                        class="btn btn-sm btn-success btn-large o_hidden"
                         id="bmk_btn_print_report_details_outflow"
                         name='print_report'
                         type="button">Details Movements of Outflow <i class="fa fa-file-pdf-o"></i>
@@ -15,7 +15,7 @@
 
             <t t-if="widget.model=='cash_box.inflow_seat'">
                 <button
-                        class="btn btn-sm btn-success btn-large"
+                        class="btn btn-sm btn-success btn-large o_hidden"
                         id="bmk_btn_print_report_details_inflow"
                         name='print_movements'
                         type="button">Details Movements of Inflow <i class="fa fa-file-pdf-o"></i>
