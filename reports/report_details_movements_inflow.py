@@ -31,7 +31,6 @@ class ReportDetailsMovementsInflow(models.AbstractModel):
         report = report_obj._get_report_from_name('cash_box.report_details_movements_inflow')
 
         models = self.env['cash_box.inflow_seat'].search([])
-        reg = []
         tmp = {}
 
         for r in models:
@@ -42,6 +41,8 @@ class ReportDetailsMovementsInflow(models.AbstractModel):
                 tmp[name_month] = {'name':name_month, 'movements_months':[], 'total_amount': 0}
 
             tmp[name_month]['movements_months'].append(r)
+            tmp[name_month]['total_amount'] += r.amount
+
 
         reg = tmp.values()
 
