@@ -38,6 +38,12 @@
     'qweb': [
         'static/src/xml/custom_button_report_details_movements.xml'
     ],
+    'js': [
+        'static/src/js/custom_button_report_details_movements_actions.js'
+    ],
+    'css': [
+        'static/src/css/styles.css'
+    ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
