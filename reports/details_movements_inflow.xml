@@ -6,10 +6,65 @@
                 <t t-call="report.external_layout">
 
                     <div class="page">
-                        Details Movements Inflow
+
+                    	<div class="page-header">
+                    	    <h3>Details Movements Inflow</h3>
+                    	</div>
+
 
                         <t t-foreach="data" t-as="x">
-                            <p><t t-esc="x"></t></p>
+
+                        	<table class="table">
+                        	    <thead>
+                        	    	<tr>
+                        	        	<p>Month: <t t-esc="x['name']"></t></p>
+                        	        </tr>
+
+                        	        <tr>
+                        	            <th>Employee</th>
+                        	            <th>Amount</th>
+                        	            <th>Description</th>
+                        	            <th>Date</th>
+                        	        </tr>
+                        	    </thead>
+                        	    
+                        	    <tbody>              	        
+                    	        	<t t-foreach="x['movements_months']" t-as="o">
+                    	        		<tr>
+                        	        		<td>
+	                        	                <t t-esc="o.employee.name"/>
+	                        	            </td>
+
+                        	        		<td>
+	                        	                <t t-esc="o.amount"/>
+	                        	            </td>
+
+                        	        		<td>
+	                        	                <t t-esc="o.description"/>
+	                        	            </td>
+
+											<td>
+											    <t t-esc="o.created_date"/>
+											</td>
+	                        	        </tr>
+                    	        		
+                    	        	</t>
+
+                        	    </tbody> 
+
+<!--                         	    <tfoot>
+                        	        <tr>
+                        	            <td>
+                        	            </td>
+
+                        	            <td>
+
+                        	            </td>
+                        	        </tr>
+
+                        	    </tfoot> -->
+
+                        	</table>
                         </t>
                     </div>
                 </t>
