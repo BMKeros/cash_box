@@ -259,3 +259,16 @@ msgstr "cash_box.outflow_seat"
 #: model:ir.model,name:cash_box.model_movements
 msgid "movements"
 msgstr "movimientos"
+
+#. module: cash_box
+#: code:addons/cash_box/models/models.py:67
+#, python-format
+msgid "The amount entered exceeds the amount available"
+msgstr "El monto ingresado excede el monto disponible"
+
+#. module: cash_box
+#: code:addons/cash_box/models/models.py:70
+#: code:addons/cash_box/models/models.py:122
+#, python-format
+msgid "The amount entered must be greater than zero"
+msgstr "El monto ingresado debe ser mayor que cero"
