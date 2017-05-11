@@ -117,7 +117,6 @@ class inflow_seat(models.Model):
 
     @api.model
     def create(self, vals):
-        print vals
         if vals.get("amount") <= 0:
             raise ValidationError(_('The amount entered must be greater than zero'))
 
