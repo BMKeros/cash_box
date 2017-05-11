@@ -1,4 +1,4 @@
-from odoo import api, models
+from odoo import api, models, _
 
 class ReportDetailsMovementsInflow(models.AbstractModel):
     _name = 'report.cash_box.report_details_movements_inflow'
@@ -6,18 +6,18 @@ class ReportDetailsMovementsInflow(models.AbstractModel):
     @api.model
     def _get_name_month(self, date):
         months = {
-            '01': "January",
-            '02': "February",
-            '03': "March",
-            '04': "April",
-            '05': "May",
-            '06': 'June',
-            '07': 'July',
-            '08': "August",
-            '09': "September",
-            '10': "October",
-            '11': "November",
-            '12': "December",
+            '01': _("January"),
+            '02': _("February"),
+            '03': _("March"),
+            '04': _("April"),
+            '05': _("May"),
+            '06': _('June'),
+            '07': _('July'),
+            '08': _("August"),
+            '09': _("September"),
+            '10': _("October"),
+            '11': _("November"),
+            '12': _("December"),
         }
 
         date = date.split('-')
