@@ -5,25 +5,24 @@
             <xpath expr="//div[@class='header']" position="replace">
                 <div class="header">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-lg-12 pull-right"  id="slogan" t-field="company.rml_header1"/>
+                    </div>
+                    <br></br>
+                    <div class="row" id="report-container">
+                        <div class="col-lg-8" id="logo">
                             <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo"
-                                 style="max-height: 45px;"/>
-                        </div>
-                        <div class="col-xs-9 text-right" style="margin-top:20px;" t-field="company.rml_header1"/>
-                    </div>
-                    <div class="row zero_min_height">
-                        <div class="col-xs-12">
-                            <div style="border-bottom: 1px solid blue;"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12" style="border-bottom: 1px solid blue;">
-                            <span t-if="company.partner_id.vat">TIN:
-                                <span t-field="company.partner_id.vat"/>
-                            </span>
-                            <div t-field="company.partner_id"
-                                 t-field-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;:[&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: true}"
-                                 class="pull-left"/>
+                                 style="max-height: 60px;"/>
+                            <div class="col-lg-4" id="report-phone">
+                                <span t-field="company.phone"/>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6" id="report-name">
+                                    <span t-field="company.name"/>
+                                </div>
+                                <div class="col-xs-6" id="report-email">
+                                    <span t-field="company.email"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,15 +36,12 @@
                     <t t-call="report.external_layout">
 
                         <div class="page" id="page">
-                            <br></br>
-                            <br></br>
                             <div class="page-header">
+                                <br></br>
                                 <br></br>
                                 <br></br>
                                 <h3 id="type_voucher">Comprobante de Entrada</h3>
                             </div>
-                            <br></br>
-                            <br></br>
                             <table class="table table-condensed">
                                 <thead>
                                     <th colspan="6" id="data_voucher">Datos del comprobante</th>
