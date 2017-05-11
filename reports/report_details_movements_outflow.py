@@ -45,11 +45,14 @@ class ReportDetailsMovementsOutflow(models.AbstractModel):
 
         reg = tmp.values()
 
+        currency = self.env['res.company']._company_default_get('cash_box').currency_id
+
         docargs = {
             'doc_ids': docids,
             'doc_model': report.model,
             'docs': [],
             'data': reg,
+            'currency_company': currency
         }
 
         return report_obj.render('cash_box.report_details_movements_outflow', docargs)

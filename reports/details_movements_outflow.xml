@@ -23,9 +23,9 @@
 
                                     <tr>
                                         <th>Employee</th>
-                                        <th>Amount</th>
                                         <th>Description</th>
                                         <th>Date</th>
+                                        <th>Amount</th>
                                     </tr>
                                 </thead>
 
@@ -46,7 +46,11 @@
                                             </td>
 
                                             <td>
-                                                <t t-esc="o.amount"/>
+                                                <span t-if="o.currency_id.position == 'before'"
+                                                      t-esc="o.currency_id.symbol"/>
+                                                <span t-esc="o.amount"/>
+                                                <span t-if="o.currency_id.position == 'after'"
+                                                      t-esc="o.currency_id.symbol"/>
                                             </td>
                                         </tr>
                                     </t>
@@ -59,7 +63,11 @@
                                             Total:
                                         </td>
                                         <td>
-                                            <t t-esc="x['total_amount']"></t>
+                                            <span t-if="currency_company.position == 'before'"
+                                                  t-esc="currency_company.symbol"/>
+                                            <span t-esc="x['total_amount']"/>
+                                            <span t-if="currency_company.position == 'after'"
+                                                  t-esc="currency_company.symbol"/>
                                         </td>
                                     </tr>
                                 </tfoot>
