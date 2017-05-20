@@ -14,42 +14,34 @@
 @font-family-serif: Georgia, "Times New Roman", Times, serif;
 }
 
-#report-container{
-    margin-top: 3% !important;
+
+
+#logo img {
+    margin-top: 2% !important;
 }
 
 #slogan {
-    color: #5f5e97 !important;
-    /*margin-left: 20%!important;*/
+    margin-top: -5% !important;
+    margin-left: 80% !important;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
 
 }
 
 #report-phone {
-    margin-top: -2% !important;
-    margin-left: 19% !important;
-    font-size: 14px !important;
+    margin-top: -7% !important;
+    margin-left: 22% !important;
+    font-size: 15px !important;
 }
 
 #report-email {
-    margin-top: -5% !important;
-    margin-left: 20% !important;
-    font-size: 14px !important;
+    margin-top:-10% !important;
+    margin-left: 40% !important;
 }
 
 #report-name {
-    margin-top: -8% !important;
-    margin-left: 20% !important;
+    margin-top:4% !important;
+    margin-left: 40% !important;
     font-size: 18px !important;
-    color: #5f5e97 !important;
 }
 
-#page{
-    margin-top: 15% !important;
-}
-
-#footer{
-    background-color:#bfbea8 !important;
-    border-radius: 80% !important;
-}
