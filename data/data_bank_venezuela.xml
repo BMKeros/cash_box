@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- res.bank of Venezuela -->
+        <record model="res.bank" id="data_res_bank_0001">
+            <field name="name">Banco Central de Venezuela</field>
+            <field name="bic">0001</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0102">
+            <field name="name">Banco de Venezuela S.A.C.A. Banco Universal</field>
+            <field name="bic">0102</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0104">
+            <field name="name">Venezolano de Crédito, S.A. Banco Universal</field>
+            <field name="bic">0104</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0105">
+            <field name="name">Banco Mercantil, C.A. Banco Universal</field>
+            <field name="bic">0105</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0108">
+            <field name="name">Banco Provincial, S.A. Banco Universal</field>
+            <field name="bic">0108</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0114">
+            <field name="name">Bancaribe C.A. Banco Universal</field>
+            <field name="bic">0114</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0115">
+            <field name="name">Banco Exterior C.A. Banco Universal</field>
+            <field name="bic">0115</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0116">
+            <field name="name">Banco Occidental de Descuento, Banco Universal C.A</field>
+            <field name="bic">0116</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0128">
+            <field name="name">Banco Caroní C.A. Banco Universal</field>
+            <field name="bic">0128</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0134">
+            <field name="name">Banesco Banco Universal S.A.C.A.</field>
+            <field name="bic">0134</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0137">
+            <field name="name">Banco Sofitasa, Banco Universal</field>
+            <field name="bic">0137</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0138">
+            <field name="name">Banco Plaza, Banco Universal</field>
+            <field name="bic">0138</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0146">
+            <field name="name">Banco de la Gente Emprendedora C.A</field>
+            <field name="bic">0146</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0151">
+            <field name="name">BFC Banco Fondo Común C.A. Banco Universal</field>
+            <field name="bic">0151</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0156">
+            <field name="name">100% Banco, Banco Universal C.A.</field>
+            <field name="bic">0156</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0157">
+            <field name="name">DelSur Banco Universal C.A.</field>
+            <field name="bic">0157</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0163">
+            <field name="name">Banco del Tesoro, C.A. Banco Universal</field>
+            <field name="bic">0163</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0166">
+            <field name="name">Banco Agrícola de Venezuela, C.A. Banco Universal</field>
+            <field name="bic">0166</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0168">
+            <field name="name">Bancrecer, S.A. Banco Microfinanciero</field>
+            <field name="bic">0168</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0169">
+            <field name="name">Mi Banco, Banco Microfinanciero C.A.</field>
+            <field name="bic">0169</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0171">
+            <field name="name">Banco Activo, Banco Universal</field>
+            <field name="bic">0171</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0172">
+            <field name="name">Bancamica, Banco Microfinanciero C.A.</field>
+            <field name="bic">0172</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0173">
+            <field name="name">Banco Internacional de Desarrollo, C.A. Banco Universal</field>
+            <field name="bic">0173</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0174">
+            <field name="name">Banplus Banco Universal, C.A</field>
+            <field name="bic">0174</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0175">
+            <field name="name">Banco Bicentenario del Pueblo de la Clase Obrera, Mujer y Comunas B.U.</field>
+            <field name="bic">0175</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0176">
+            <field name="name">Novo Banco, S.A. Sucursal Venezuela Banco Universal</field>
+            <field name="bic">0176</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0177">
+            <field name="name">Banco de la Fuerza Armada Nacional Bolivariana, B.U.</field>
+            <field name="bic">0177</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0190">
+            <field name="name">Citibank N.A.</field>
+            <field name="bic">0190</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0191">
+            <field name="name">Banco Nacional de Crédito, C.A. Banco Universal</field>
+            <field name="bic">0191</field>
+        </record>
+
+        <record model="res.bank" id="data_res_bank_0601">
+            <field name="name">Instituto Municipal de Crédito Popular</field>
+            <field name="bic">0601</field>
+        </record>
+    </data>
+</odoo>
