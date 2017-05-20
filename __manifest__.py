@@ -33,7 +33,8 @@
         'reports/report_voucher_outflow.xml',
         'reports/report_voucher_inflow.xml',
         'reports/details_movements_inflow.xml',
-        'reports/details_movements_outflow.xml'
+        'reports/details_movements_outflow.xml',
+        'data/data_bank_venezuela.xml'
     ],
     'qweb': [
         'static/src/xml/custom_button_report_details_movements.xml'
