@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
         <!-- res.bank of Venezuela -->
 
         <record model="res.bank" id="data_res_bank_0001">
